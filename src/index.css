@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #eeeeea;
+  background: #141614;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 1.5;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+}
+button,
+select,
+input {
+  font: inherit;
+}
+button,
+select {
+  min-height: 44px;
+  padding: 9px 16px;
+  border: 1px solid #565d56;
+  border-radius: 4px;
+  color: #eeeeea;
+  background: transparent;
+}
+button {
+  cursor: pointer;
+}
+button:hover:not(:disabled) {
+  background: #292e29;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible {
+  outline: 2px solid #9fcb99;
+  outline-offset: 4px;
+}
+a {
+  color: inherit;
+  text-decoration-color: #6b796b;
+  text-underline-offset: 4px;
+}
+a:hover {
+  color: #b9dab3;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
