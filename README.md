@@ -56,7 +56,7 @@ npm run preview
 
 The test suite includes the RFC 7636 PKCE challenge vector, verifier shape, state validation, playback progress, duration formatting, and rotation deduplication. GitHub Actions runs tests, lint, and the production build. No live Spotify account is used by automated checks.
 
-For static hosting, deploy `dist/` over HTTPS and register the exact production redirect URI. This repository does not publish or change your Spotify app automatically.
+For static hosting, deploy `dist/` over HTTPS and register the exact production redirect URI. Set `VITE_SPOTIFY_CLIENT_ID` and `VITE_REDIRECT_URI` in the build environment before running `npm run build`. If either value changes, rebuild and redeploy `dist/`. This repository does not publish or change your Spotify app automatically.
 
 ## References
 
